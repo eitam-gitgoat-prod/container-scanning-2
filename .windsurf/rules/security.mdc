@@ -1,0 +1,7 @@
+---
+description: Security and code quality guidelines
+---
+# Security Guidelines
+- Validate all inputs before processing
+- Never hardcode secrets or credentials
+- Sanitize outputs to prevent injection attacks
