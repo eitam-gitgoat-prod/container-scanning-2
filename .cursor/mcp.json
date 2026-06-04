@@ -1,0 +1,45 @@
+{
+    "mcpServers":  {
+                       "puppeteer":  {
+                                         "args":  [
+                                                      "-y",
+                                                      "@modelcontextprotocol/server-puppeteer"
+                                                  ],
+                                         "command":  "npx"
+                                     },
+                       "fetch":  {
+                                     "args":  [
+                                                  "-y",
+                                                  "@modelcontextprotocol/server-fetch"
+                                              ],
+                                     "command":  "npx"
+                                 },
+                       "memory":  {
+                                      "args":  [
+                                                   "-y",
+                                                   "@modelcontextprotocol/server-memory"
+                                               ],
+                                      "command":  "npx"
+                                  },
+                       "brave-search":  {
+                                            "args":  [
+                                                         "-y",
+                                                         "@modelcontextprotocol/server-brave-search"
+                                                     ],
+                                            "env":  {
+                                                        "BRAVE_API_KEY":  "${BRAVE_API_KEY}"
+                                                    },
+                                            "command":  "npx"
+                                        },
+                       "github":  {
+                                      "args":  [
+                                                   "-y",
+                                                   "@modelcontextprotocol/server-github"
+                                               ],
+                                      "env":  {
+                                                  "GITHUB_PERSONAL_ACCESS_TOKEN":  "${GITHUB_TOKEN}"
+                                              },
+                                      "command":  "npx"
+                                  }
+                   }
+}
